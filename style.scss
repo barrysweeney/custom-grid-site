@@ -1,0 +1,167 @@
+$green: #05c089;
+$border: 1px solid grey;
+
+html {
+  font-family: "Playfair Display", serif;
+}
+
+// LINKS
+a {
+  color: darken($green, 20%);
+}
+
+// HORIZONTAL LIST
+.horizontal-list {
+  list-style: none;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(14, 1fr);
+
+  i {
+    font-size: 25px;
+    padding: 5px;
+  }
+}
+
+// CENTERED DIV
+.center {
+  text-align: center;
+  border-left: $border;
+  border-right: $border;
+}
+
+// BUTTONS
+button {
+  background: $green;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn-outline {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: $green;
+  font-weight: 700;
+  text-transform: capitalize;
+  border: 1px solid $green;
+  margin: 5px;
+}
+
+// HEADINGS
+header {
+  text-align: center;
+  p {
+    padding-bottom: 20px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  padding-bottom: 20px;
+  text-shadow: 1px 1px darken($green, 30%);
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 25px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px grey;
+}
+
+// TOP NAVBAR
+nav {
+  position: fixed;
+  background-color: white;
+  border-bottom: $border;
+}
+
+.logo {
+  color: $green;
+}
+
+.search-icon {
+  text-align: end;
+}
+
+// MAIN CONTENT CONTAINER BELOW NAVBAR
+.container {
+  background: #e6e4e421;
+  background: linear-gradient(
+    hsla(0, 14%, 99%, 0.129),
+    hsla(0, 100%, 99%, 0.129)
+  );
+  margin-top: 50px;
+}
+
+// HOW TO USE/HOW IT WORKS STEPS
+.step {
+  background: linear-gradient(to right, white, #239ff1, white);
+  color: white;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.sources,
+.build,
+.deploy {
+  font-weight: 600;
+}
+
+// LIST OF MADE UP COMPANIES
+.companies {
+  grid-template-columns: repeat(11, 1fr);
+  border-bottom: $border;
+  font-weight: 600;
+
+  i {
+    color: rgba(46, 42, 42, 0.527);
+    font-size: 25px;
+  }
+}
+
+// FEATURES/ABOUT SECTION
+.encourage div,
+.plugins div {
+  border: $border;
+  box-shadow: 6px 8px lighten($green, 50%);
+}
+
+// PLUGINS AND STARTS SECTION
+.plugins button {
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: unset;
+}
+
+// BLOG SECTION
+.blog-post img {
+  border-radius: 100%;
+  float: left;
+  margin-right: 20px;
+}
+
+// NEWSLETTER
+.newsletter {
+  border: $border;
+  border-bottom: 3px dashed rgb(194, 73, 73);
+}
+
+// FOOTER
+.page-footer {
+  border-top: $border;
+  font-weight: 600;
+}
+
+footer .horizontal-list {
+  grid-template-columns: repeat(3, 1fr);
+}
